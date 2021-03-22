@@ -74,6 +74,9 @@ for root, dirs, files in os.walk(os.path.join(os.getcwd(),'users','temp')):
         zNew_users_zip.write(os.path.join(root, f))
 zNew_users_zip.close()
 
+#remove temp dir before final zip
+shutil.rmtree(os.path.join(os.getcwd(),'users','temp'))
+
 #6) re-zip all files for new CTT
 CTT_obj = zip_file_name+'.zip'
 zCTT_zip = zipfile.ZipFile(CTT_obj,'w',zipfile.ZIP_DEFLATED)
