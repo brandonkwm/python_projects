@@ -71,7 +71,7 @@ users_zip_obj = os.path.join(os.getcwd(),'users','CM.149.zip')
 zNew_users_zip = zipfile.ZipFile(users_zip_obj,'w',zipfile.ZIP_DEFLATED)
 for root, dirs, files in os.walk(os.path.join(os.getcwd(),'users','temp')):
     for f in files:
-        zNew_users_zip.write(os.path.join(root, f))
+        zNew_users_zip.write(os.path.join(root, f),arcname=f)
 zNew_users_zip.close()
 
 #remove temp dir before final zip
