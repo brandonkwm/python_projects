@@ -1,4 +1,7 @@
+join of 2 data sets:
+api, downloaded csv of carpark data
 
+config file drives the date, time step, backward shifter and report name.
 generates 2 excel as a report
 
 shows a histogram plot for the lot % utilization (to see under utilized carparks).
