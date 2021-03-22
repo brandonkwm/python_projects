@@ -1,5 +1,9 @@
 join of 2 data sets:
 api, downloaded csv of carpark data
+Note: 
+- all -ve lot utilization (i.e. lot size - available lots <0) rows are dropped
+- all outdated data (i.e. last update of carpark at 2015) rows are also dropped. Here, we want to include recently updated data i.e. those updated within the current year.
+
 
 config file drives the date, time step, backward shifter and report name.
 generates 2 excel as a report
